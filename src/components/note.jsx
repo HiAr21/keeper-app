@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-function Note(){
+function Note(props){
     return(
         <>
         <div className="note">
-            <h1 className="noteHeading">Note Heading</h1>
-            <p className="noteDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, molestias!</p>    
+            <h1 className="noteHeading">{props.title}</h1>
+            <p className="noteDescription">{props.content}</p>    
         </div>
-        
         </>
     );
 }
